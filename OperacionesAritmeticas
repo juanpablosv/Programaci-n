@@ -1,0 +1,27 @@
+// Operaciones Aritmeticas.
+// Autor: Jorge Andrés Ibarra Mogro
+// Fecha 18 de agosto de 2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	int A, B, S, R, M, D;
+	cout << "Ingrese un valor" << endl;
+	cin >> A;
+	cout << "Ingrese otro valor" << endl;
+	cin >> B;
+	S = A + B;
+	cout << "La suma es igual a:"<< S << endl;
+	R = A - B;
+	cout << "La resta es igual a:"<< R << endl;
+	M = A * B;
+	cout<< "La multiplicacion es igual a:" << M  << endl;
+	D = A / B;
+	cout << "La division respectivamente es igual a:" << D << endl;
+	getch();
+}
