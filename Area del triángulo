@@ -1,0 +1,19 @@
+// Autor: Jorge Andrés Ibarra Mogro
+// Fecha: 25 de agosto de 2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+void main(){
+	float B, H, A;
+	cout << "Introduzca el valor de la base" << endl;
+	cin >> B;
+	cout << "Introduzca el valor de la altura" << endl;
+	cin>>H;
+	A=(B*H)/2;
+	cout<< "El valor del area: " << A << "m2"<< endl;
+	getch();
+}
