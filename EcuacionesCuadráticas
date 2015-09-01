@@ -1,0 +1,49 @@
+//Autor: Jorge Andres Ibarra Mogro
+//Fecha: 1 de septiembre
+//Objetivo: El objetivo de este programa es hallar las raices de una ecuación cuadrática
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	//Se declara las variables racionales
+	float a,b,c,D,x,x1,x2,xr,xi;
+	//Se ingresa los valores a,b,c coeficientes de la ecuación cuadrática
+	cout<<"ingrese a:";
+	cin>>a;
+	cout<<"ingrese b:";
+	cin>>b;
+	cout<<"ingrese c:";
+	cin>>c;
+	//Se halla el valor dentro de la raiz de la fórmula general para ver si la solucion tendra dos solucions, una solucion o es irreal
+	D=b*b-4*(a)*(c);
+	//Se trabaja con un condicional para trabajar si tiene dos soluciones mostrando los valores en pantalla
+	if (D>0)
+	{
+		x1=(-b+sqrt(D))/2*(a);
+		x2=(-b-sqrt(D))/2*(a);
+		cout<<"Hay dos soluciones reales"<<x1<<"y"<<x2<<endl;
+	}
+	else
+	//Se trabaja con otro condicional cuando solo hay una solución mostrando el valor en pantalla
+	if (D==0)
+	{
+		x=-b/2*(a);
+		cout<<"hay una solucion"<<x<<endl;
+	}
+	//Despues se dice que es imaginario si no cumplio la condicion anterior mostrando en pantalla
+	else {
+		xr=-b/2*(a);
+		cout<<"es real:"<<endl;
+		xi=sqrt(-D)/2*(a);
+		cout << "Soluciones Imaginarias"<<endl;
+		cout << "X1: "<<xr<<" + "<< xi << "i"<<endl;
+		cout << "X2: "<<xr<<" - "<< xi << "i"<<endl;
+		}
+	getch();
+	return 0;
+}
