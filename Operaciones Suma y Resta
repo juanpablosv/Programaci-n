@@ -1,0 +1,41 @@
+// Autor: Jorge Andres Ibarra Mogro
+// Fecha 9 de septiembre de 2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main(){
+	//Se declara las variables enteras y una racional
+	int a, b, c, d, e, g;
+	float f;
+	//Se muestra en pantalla la primera orden
+	cout <<"ingrese el primer numero"<< endl;
+	//Se ingresa los valores.
+	cin >> a;
+	//Se muestra en pantalla la segunda orden
+	cout <<"ingrese el segundo numer"<< endl;
+	//Se ingresa el segundo valor
+	cin >> b;
+	//Se realiza las operaciones con las variables en las cuales introducimos un valor y estos datos se guardan en el resto de las variables.
+	//Se suma a mas b y se guarda un numero entero en la variable c
+	c = a+b;
+	//Se resta a menos b y se guarda un numero entero en la variable d
+	d = a-b;
+	//Se multiplica a por b y se guarda un numero entero en la variable e
+	e = a*b;
+	//Se divide a por b tenemos guardado un numero racional en la variable f
+	f = a/b;
+	//Se saca el residuo haciendo la operacion mod
+	g = a%b;
+	//Se muestra los resultados de las distintas variables mas texto.
+	cout <<"la suma; " << c << endl;
+	cout <<"la resta es; " << d << endl;
+	cout <<"la multiplicaciobn es; " << e << endl;
+	cout <<"la division es; " << f << endl;
+	cout <<"el rsiduo es; " << g << endl;
+	getch();
+	return 0;
+}
