@@ -1,0 +1,28 @@
+// Autor: Jorge Andrés Ibarra Mogro
+// Fecha: 8 de septiembre de 2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main (){
+	int h, m, s;
+	cout<<"Introduzca la hora en formato de 24 horas"<<endl;
+	cout<<"Introduzca la hora"<<endl;
+	cin >> h;
+	cout<<"Introduzca los minutos"<<endl;
+	cin >> m;
+	cout<<"Introduzca los segundos"<<endl;
+	cin >> s;
+	cout<<"La hora en formato de 24 horas es: "<<h<<" "<<m<<" "<<s<<endl;
+	if(h>12){
+		h=h-12;
+		cout<<"La hora en formato de 12 horas es: " <<h<<" "<<m<<" "<<s<<"PM"<<endl;
+	}
+	else
+		cout<<"La hora en formato de 12 horas es: " <<h<<" "<<m<<" "<<s<<"AM"<<endl;
+	getch();
+}
+
