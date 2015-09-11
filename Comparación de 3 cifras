@@ -1,0 +1,49 @@
+// Autor: Jorge Andrés Ibarra Mogro
+// Fecha: 11 de septiembre de 2015 en clases
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main(){
+	int A,B,C;
+	cin>>A>>B>>C;
+	if(A==B)
+		if(A==C)
+			cout<<"Los tres son iguales"<<endl;
+		else
+			cout<<A<<"Es igual a "<< B<<endl;
+	else
+		if(A==C)
+			cout<<A<<"es igual a "<<C<<endl;
+		else
+			if(B==C)
+				cout<<B<<"es igual a"<<C<<endl;
+			else
+				cout<<"Todos son valores diferentes"<<endl;
+	if (A>B)
+		if (A>C){
+			cout<<"El mayor es"<<A<<endl;
+			if (B>C)
+				cout<<"El menor es:"<<C<<endl;
+			else
+				cout<<"El menor es: "<<B<<endl;
+		}
+		else{
+			cout<<"El mayor es: "<<C<<endl;
+			cout<<"El menor es"<<B<<endl;
+		}
+	else
+		if(B>C){
+			cout<<"El mayor es: "<<B<<endl;
+			if(A>C)
+				cout<<"El menor es: "<<C<<endl;
+			else
+				cout<<"El menor es:"<<B<<endl;}
+		else {
+			cout<<"El mayor es: "<<C<<endl;
+			cout<<"El menor es"<<A<<endl;}
+	getch();
+}
