@@ -1,0 +1,48 @@
+// Autor: Jorge Andres Ibarra Mogro
+// Fecha: 9 de septiembre
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+void main()
+{
+	int n;
+	char c;
+	float b, h, a;
+	cout << "Introduzca los numeros de triangulos a calcular" << endl;
+	cin >> n;
+	for (int i = 0;i < n;i++) {
+		cout << "Introduzca la base" << endl;
+		cin >> b;
+		cout << "Introduzca la altura" << endl;
+		cin >> h;
+		a = b*h / 2;
+		cout << "El area del triangulo es: " << a << endl;
+	}
+	while (n != 0) {
+		cout << "Introduzca la base" << endl;
+		cin >> b;
+		cout << "Introduzca la altura" << endl;
+		cin >> h;
+		a = b*h / 2;
+		cout << "El area del triangulo es: " << a << endl;
+		cout << "Introduzca un valor n distinto de 0 si quiere seguir calculando triangulos" << endl;
+		cin >> n;
+	}
+	do {
+		cout << "Introduzca la base" << endl;
+		cin >> b;
+		cout << "Introduzca la altura" << endl;
+		cin >> h;
+		a = b*h / 2;
+		cout << "El area del triangulo es: " << a << endl;
+		cout << "Introduzca una letra distinto de S si quiere seguir calculando triangulos" << endl;
+		cin >> c;
+	} while (c != 's');
+	_getch();
+}
+
