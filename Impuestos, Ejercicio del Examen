@@ -1,0 +1,28 @@
+// Autor: Jorge Andres Ibarra Mogro
+// Fecha: 29 de Septiembre de 2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main (){
+	int n;
+	float c, p;
+	cout<< "Ingrese el numero de empleados"<< endl;
+	cin>> n;
+	c=0;
+	for(int i=1; i<=n;i++){
+		cout<<"Ingrese el sueldo de la persona "<<i<<endl;
+		cin>>p;
+		if(p>=2*1656){
+			c=c+p*0.13;
+			cout<<"El Impuesto a pagar por la persona " << i << " es Bs: " << p*0.13 <<endl<<endl;
+		}
+		else
+			cout<<"El Impuesto a pagar por la persona " << i << " es Bs: 0" << endl<<endl;
+	}
+	cout<<"El impuesto total a pagar del conjunto de personas es: "<< c << " Bs.";
+	getch();
+}
