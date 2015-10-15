@@ -1,0 +1,42 @@
+// Menu_Ejemplo.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+
+using namespace std;
+
+int suma_entre_N_numeros (int A);
+int suma_impares (int B);
+int suma_de_cuadrados (int C);
+int suma_intercalado (int D);
+int producto (int E);
+int Horner (int F);
+
+void main()
+{
+	int N, opcion, S, P;
+	float x;
+	do{
+		cout << "\t\t Menu \n";
+		cout << "1. Suma de N numeros \n";
+		cout << "2. suma de los numeros impares hasta N \n";
+		cout << "3. Suma de los cuadrados de los primeros N numeros \n";
+		cout << "4. Suma de N numeros alternados \n";
+		cout << "5. Producto de N numeros enteros \n";
+		cout << "6. Horner \n";
+		cout << "0. Salir del programa \n";
+		cout << "Opcion: ";
+		cin >> opcion;
+		switch (opcion){
+		case 1:
+			cout<<"Ingrese la cantidad de numeros enteros a sumar: ";
+			cin >> N;
+			cout<<"La suma es: "<< suma_entre_N_numeros (N);
+		}
+	}
+	getch();
+}
+
