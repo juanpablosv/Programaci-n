@@ -1,0 +1,28 @@
+// Parcial2 Ejercicio2
+// Autor: Jorge Andrés Ibarra Mogro
+// Fecha: 11 de noviembre de 2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int main()
+{
+	int N;
+	float x, fac = 1, C = 2;
+	cout << "Ingrese el numero N para calcular la serie: ";
+	cin >>N;
+	cout << "Ingrese el valor de x para el calculo de la serie: ";
+	cin >>x;
+	for (int i = 1; i <= N; i++)
+	{
+		fac = fac * i;
+		C = C + pow(x, i) / fac;
+	}
+	cout<<"La suma de la serie es: "<<C;
+	getch();
+	return 0;
+}
